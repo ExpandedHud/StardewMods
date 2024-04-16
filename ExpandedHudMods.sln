@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpandedFishInfo", "Expande
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpandedHudInfo", "ExpandedHudInfo\ExpandedHudInfo.csproj", "{0D1AA7ED-AEB6-42F1-B464-EAC8997EC08C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIInfoSuite2", "UIInfoSuite2\UIInfoSuite2.csproj", "{B6DD0C36-999B-44FD-9316-C0AA6D5A6E7A}"
+EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExpandedHudShared", "ExpandedHudShared\ExpandedHudShared.shproj", "{7899CFD1-D7F4-4A89-ADC4-EC5D6FD2CBDE}"
 EndProject
 Global
@@ -23,6 +25,9 @@ Global
 		{0D1AA7ED-AEB6-42F1-B464-EAC8997EC08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1AA7ED-AEB6-42F1-B464-EAC8997EC08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1AA7ED-AEB6-42F1-B464-EAC8997EC08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6DD0C36-999B-44FD-9316-C0AA6D5A6E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DD0C36-999B-44FD-9316-C0AA6D5A6E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DD0C36-999B-44FD-9316-C0AA6D5A6E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
