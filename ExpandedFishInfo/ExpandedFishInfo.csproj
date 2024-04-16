@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\common.targets"/>
+  <Import Project="..\ExpandedHudShared\ExpandedHudShared.projitems" Label="Shared"/>
+
+  <PropertyGroup>
+    <EnableHarmony>true</EnableHarmony>
+    <!--    Mod Manifest Builder-->
+    <Name>ExpandedFishInfo</Name>
+    <Version>0.1.0</Version>
+    <Description>A mod to display detailed information on fish catch data.</Description>
+    <!--    Auto i18n-->
+    <TranslationClassBuilder_AddGetByKey>true</TranslationClassBuilder_AddGetByKey>
+  </PropertyGroup>
+
+</Project>
