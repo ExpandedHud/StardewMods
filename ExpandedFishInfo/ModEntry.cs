@@ -1,6 +1,4 @@
-﻿using StardewModdingAPI;
-
-namespace ExpandedFishInfo;
+﻿namespace ExpandedHud.ExpandedFishInfo;
 
 public class ModEntry : Mod
 {

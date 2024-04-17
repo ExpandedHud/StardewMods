@@ -1,14 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <Import Project="..\common.targets"/>
-  <Import Project="..\ExpandedHudShared\ExpandedHudShared.projitems" Label="Shared"/>
-
   <PropertyGroup>
+    <RootNamespace>ExpandedHud.ExpandedHudInfo</RootNamespace>
+    <!--    SMAPI-->
     <EnableHarmony>true</EnableHarmony>
     <!--    Mod Manifest Builder-->
     <Name>ExpandedHudInfo</Name>
     <Version>0.1.0</Version>
     <Description>A mod that adds lots of useful information to your HUD so you can spend more time playing!</Description>
+    <UniqueId>ExpandedHud.$(AssemblyName)</UniqueId>
     <!--    Auto i18n-->
     <TranslationClassBuilder_AddGetByKey>true</TranslationClassBuilder_AddGetByKey>
   </PropertyGroup>
