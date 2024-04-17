@@ -1,6 +1,4 @@
-﻿using StardewModdingAPI;
-
-namespace ExpandedHudInfo;
+﻿namespace ExpandedHud.ExpandedHudInfo;
 
 public class ModEntry : Mod
 {

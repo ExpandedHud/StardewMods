@@ -1,0 +1,59 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)\ExpandedHudShared\ExpandedHudShared.projitems" Label="Shared"/>
+
+  <!--    Repo-->
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ExpandedHud/StardewMods</RepositoryUrl>
+  </PropertyGroup>
+
+  <!--    Lang Settings-->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <!-- Set checked on when compiling Debug. -->
+    <CheckForOverflowUnderflow Condition="$(Configuration) == 'Debug'">true</CheckForOverflowUnderflow>
+    <Platforms>AnyCPU</Platforms>
+    <WarningLevel>9999</WarningLevel>
+  </PropertyGroup>
+
+  <!--    SMAPI-->
+  <PropertyGroup>
+    <EnableModZip Condition="'$(Configuration)' == 'Debug'">False</EnableModZip>
+    <ModZipPath>$(SolutionDir)\Releases</ModZipPath>
+  </PropertyGroup>
+
+  <!--    ModManifestBuilder-->
+  <PropertyGroup>
+    <Authors>Abs0rbed, Expanded Hud Team</Authors>
+    <MinimumApiVersion_Behavior>Update</MinimumApiVersion_Behavior>
+    <MinimumGameVersion_Behavior>Update</MinimumGameVersion_Behavior>
+    <Version_AppendConfiguration>false</Version_AppendConfiguration>
+    <BaseManifest>new</BaseManifest>
+    <ManifestWarningsAsErrors Condition="$(Configuration) == 'Release'">true</ManifestWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1"/>
+    <PackageReference Include="Pathoschild.Stardew.ModTranslationClassBuilder" Version="2.0.1"/>
+    <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.3.1"/>
+    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.Diagnostics.CodeAnalysis"/>
+    <Using Include="JetBrains.Annotations"/>
+    <Using Alias="NotNullAttribute" Include="System.Diagnostics.CodeAnalysis.NotNullAttribute"/>
+    <Using Include="StardewValley"/>
+    <Using Include="StardewModdingAPI"/>
+    <Using Alias="Object" Include="System.Object"/>
+    <Using Alias="SObject" Include="StardewValley.Object"/>
+  </ItemGroup>
+</Project>
