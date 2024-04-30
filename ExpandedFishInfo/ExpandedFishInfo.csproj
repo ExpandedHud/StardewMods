@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>ExpandedHud.ExpandedFishInfo</RootNamespace>
+    <RootNamespace>ExpandedFishInfo</RootNamespace>
     <!--    SMAPI-->
     <EnableHarmony>true</EnableHarmony>
     <!--    Mod Manifest Builder-->

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>ExpandedHud.ExpandedHudInfo</RootNamespace>
+    <RootNamespace>ExpandedHudInfo</RootNamespace>
     <!--    SMAPI-->
     <EnableHarmony>true</EnableHarmony>
     <!--    Mod Manifest Builder-->

@@ -9,7 +9,11 @@
     <Import_RootNamespace>ExpandedHudShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)\API\IGenericModConfigMenuApi.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Test.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\CollectionExtensions.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ItemExtensions.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)ItemUtils.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)Profiler.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)\API\IGenericModConfigMenuApi.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)\MathUtils\RollingStatistic.cs"/>
   </ItemGroup>
 </Project>
